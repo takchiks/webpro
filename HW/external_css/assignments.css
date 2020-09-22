@@ -1,0 +1,101 @@
+body{
+	color: #000;
+	padding-bottom:20px;
+	font-family: sans-serif;
+	
+}
+.profile-img {
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #FFFFFF;
+  box-shadow: 0 0 8px 3px #B8B8B8;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  position: relative;
+}
+
+button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid grey;
+  top: 0;
+  left: 113px;
+  background: white;
+  color: blue;
+}
+.banner-bg{
+	background-image:url('assignment_bg_three.jpg');
+	background-size: cover;
+	background-position: 
+	center; background-repeat:
+	no-repeat; background-attachment: fixed;
+	
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+	background-color: rgba(0, 0, 0, 0.9);
+	width:100%;
+	color:#FFF;
+	height:50px;
+	min-height:30px;
+	max-height: 50px; 
+}
+.top-margin{
+	padding-top:30px;
+	margin-top:30px;
+}
+
+.text-white{
+	color:rgba(255, 255, 255,0.9)!important
+}
+a{
+	color:rgba(255, 255, 255,0.9)!important;
+	padding: 10px;
+	text-decoration:none;
+	font-family: "Arial Black", Gadget, sans-serif;
+	width:20%;
+	margin-left:auto;
+}
+.nice-font{
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+.quotes{
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-style: oblique;
+}
+.center-div{
+	width:70%;
+	margin-left:auto;
+}
+.text-black{
+	color:#000!important;
+}
+a:hover{
+	color: rgba(50, 230, 0, 0.90)!important;
+}
+.text-center{
+	text-align: center;
+}
+.list-circle{
+	list-style-type: circle;
+}
+.list-square{
+	list-style-type: square;
+}
+span{
+	color:red!important;
+	font-weight:bold;
+}
