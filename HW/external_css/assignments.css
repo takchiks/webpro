@@ -35,9 +35,9 @@ button {
 .banner-bg{
 	background-image:url('assignment_bg_three.jpg');
 	background-size: cover;
-	background-position: 
-	center; background-repeat:
-	no-repeat; background-attachment: fixed;
+	background-position:center; 
+	background-repeat:	no-repeat; 
+	background-attachment: fixed;
 	
 }
 .fixed-top {
