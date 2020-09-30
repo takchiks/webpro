@@ -1,0 +1,155 @@
+body {
+    font-family: verdana, tahoma, sans-serif;
+    font-size: 8pt;
+    margin: 0;
+    padding: 0;
+    background-image: url(../resources/background.png);
+    background-repeat: repeat;
+}
+dt {
+    padding: 5px;
+    margin-top: 1em;
+    font-weight: 700;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1030;
+    height: 50px;
+    width: 100%;
+    display: flex;
+}
+.heading {
+    margin-top: 75px;
+    font-family: tahoma, verdana, sans-serif, serif;
+    font-weight: 700;
+}
+.text-center {
+    text-align: center;
+}
+.container {
+    width: 800px;
+    margin: auto;
+    border-width: 4px;
+    border-color: gray;
+    border-style: solid;
+    max-width: 90%;
+}
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.container-banner {
+    margin-left: 0;
+    width: 550px;
+    float: left;
+    max-width: 65%;
+}
+.banner {
+    background-image: url(../resources/bannerbackground.png);
+    width: 100%;
+    height: 83px;
+    float: left;
+    margin: -1px;
+}
+.rating {
+    color: red;
+    font-size: 48pt;
+    font-weight: 700;
+    float: left;
+    max-width: 40%;
+}
+.rotten-img {
+    height: 83px;
+    float: left;
+    max-width: 30%;
+    margin: -1px;
+}
+.reviews {
+    font-size: 8pt;
+    color: #fff;
+    float: left;
+    margin-top: 50px;
+    max-width: 30%;
+}
+.overview-img {
+    width: 250px;
+    min-width: 35%;
+    float: left;
+    background-color: #a2b964;
+}
+.general-img {
+    width: 100%;
+}
+.clear {
+    clear: both;
+}
+.review-col {
+    float: left;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.review-box {
+    width: 100%;
+    font-size: 8pt;
+    font-weight: 700;
+    background-color: #e1d697;
+    border-style: solid;
+    border-width: 2px;
+    border-color: gray;
+    margin: 8px;
+    padding: 5px;
+}
+.review-icon {
+    margin: 5px;
+    float: left;
+}
+.col {
+    width: 47%;
+    float: left;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+.review-row {
+    margin: auto;
+}
+.reviewer {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 8px;
+}
+.general-overview {
+    margin: -1px;
+    padding-bottom: 10px;
+}
+.margin-center {
+    vertical-align: middle;
+}
+.footer {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    background-color: #a2b964;
+    display: table;
+    vertical-align: bottom;
+    position: relative;
+    margin: -1px;
+}
+.validator-html {
+    position: fixed;
+    right: 0;
+    bottom: 65px;
+    width: 8%;
+}
+.validator-css {
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+    width: 8%;
+}
+

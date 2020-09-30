@@ -99,3 +99,10 @@ span{
 	color:red!important;
 	font-weight:bold;
 }
+ol{
+	list-style-position: inside!important;
+	margin:auto;
+	text-align:center!important;
+	width:50%;
+	font-weight:bold;
+}
