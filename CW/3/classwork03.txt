@@ -5,5 +5,5 @@ Course: 6370 004
 CRN: 84208
 
 
-Classwork 03
-https://codd.cs.gsu.edu/~tchikwanda1/WP/CW/3/example.html
+Assignment 02
+https://codd.cs.gsu.edu/~tchikwanda1/WP/HW/2/tmnt.html
