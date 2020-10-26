@@ -42,5 +42,11 @@
 		</dl>
 		<pre><?php echo file_get_contents("sucker.html");?></pre>
 	<?php } ?>
+		
+	<p align="center">|&raquo;
+	<a href="./index.html" class="text-black nice-font">Home</a>&laquo;||&raquo;
+	<a href="./formtest.html" class="text-black nice-font">formtest.html</a>&laquo;||&raquo;
+	<a href="./buyagrade.html" class="text-black nice-font">buyagrade.html</a>&laquo;|
+	</p>
 	</body>
 </html> 

@@ -24,3 +24,25 @@ input[type="submit"] {
     font-size: 2em;
     width: 100%;
 }
+input {
+	background-color: #eee;
+}
+button:hover{
+	font-size:16pt;
+	background-color: #39275B;
+	border-color:#D8C858;
+	color:white;
+	margin-left:5%;
+}
+button{
+	font-size:16pt;
+	color:black;
+	background-color: #eee;
+	margin-left:5%;
+}
+form{
+	margin-left:30%;
+}
+.parent-form{
+	width:100%;
+}
