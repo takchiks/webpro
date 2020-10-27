@@ -1,4 +1,6 @@
-<?php include("header.html");
+<?php 
+session_start();
+include("header.html");
 
 $errors = array();
 
@@ -63,9 +65,14 @@ if (!is_numeric($_POST["max_seeking_age"])) {
 }
 
 if (empty($errors)) {
+	setcookie("user_name", $_POST['name'], time()+ 3600,'/');
+	$_SESSION['user_name']= $_POST['name'];
+	
+	
     $user_details = $user;
     $to_write = implode(",", $user_details);
     file_put_contents("singles.txt", PHP_EOL.$to_write, FILE_APPEND);
+	
 ?>
     <pre>
         Thank you

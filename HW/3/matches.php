@@ -1,4 +1,6 @@
-<?php include("header.html"); ?>
+<?php 
+session_start();
+include("header.html"); ?>
 <div>
     <form action="matches-submit.php" method="get">
         <fieldset>

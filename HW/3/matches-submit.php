@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include("header.html");
 
 /* Get all singles */
@@ -48,7 +48,6 @@ for ($i = 0; $i < count($singles); $i++) {
     $other_os = $other_info_array[4];
     $other_min_seek = (int)$other_info_array[5];
     $other_max_seek = (int)$other_info_array[6];
-
     /* Check gender */
     if (strcmp($match_gender, $other_gender) === 0) {
 
@@ -79,7 +78,11 @@ for ($i = 0; $i < count($singles); $i++) {
                     }
 ?>
   <div class="match">
-      <img src="user.jpg" alt="photo"/>
+      <img src="<?php if (file_exists("img/".$_GET["name"].".png")&& count($matches) != 0)
+		  echo "img/".trim($_GET["name"]).".png";
+		else
+			echo "user.jpg"
+	  ?>" alt="photo"/>
       <div>
           <ul>
               <li><p><?= $other_info_array[0] ?></p></li>
