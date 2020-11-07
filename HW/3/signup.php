@@ -22,7 +22,7 @@ include("header.html"); ?>
 		<label>(<a target="_blank" href="http://www.humanmetrics.com/cgi-win/JTypes2.asp">Don't know your type</a>)</label><br><br>
 
         <strong class="column">Favorite OS:</strong>
-        <select name="favourite_os">
+        <select name="favorite_os">
             <option value="Linux"> Linux</option>
             <option value="Mac OS X" > Mac OS X</option>
             <option value="Windows" selected> Windows</option>

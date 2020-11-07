@@ -51,3 +51,4 @@ Valentina Tereshkova,F,71,ENTJ,Mac OS X,55,65
 Vint Cerf,M,67,ISFP,Mac OS X,28,55
 Yukihiro Matsumoto,M,45,ENTP,Mac OS X,10,25
 Zelda,F,59,ESTP,Windows,40,62
+Takudzwa,F,56,ESTJ,Windows,10,90
