@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Classwork 8</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body >
+    <form method="POST" >
+      <table>
+        <tr>
+          <td></td>
+          <td class="message" id="idMessage"></td>
+        </tr>
+        <tr>
+          <td><label id="idLable">ID:</label></td>
+          <td><input id="id" name="id" type="text"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td id="firstNameMessage"></td>
+        </tr>
+        <tr>
+          <td><label id="firstNameLable">FirstName: </label></td>
+          <td><input name="firstName" id="firstName" type="text"><br></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td id="lastNameMessage"></td>
+        </tr>
+        <tr>
+          <td><label id="lastNameLable">LastName: </label></td>
+          <td><input name="lastName" id="lastName" type="text"><br></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><button name="submit" id="submit" onclick=" return handlerFunction();">Add</button></td>
+        </tr>
+      </table>
+    </form>
+    <div id="added"></div>
+    <script>
+      function handlerFunction(){
+        var line = "You forgot to fill in the following field(s) ";
+        var arr = [];
+        if(document.getElementById("firstName").value === ""|| document.getElementById("lastName").value === ""|| document.getElementById("id").value === ""){
+          document.getElementById("added").innerHTML ="<p ></p>";
+          if(document.getElementById("id").value === ""){
+            document.getElementById("idMessage").innerHTML ="<u style='color:red'>Please Enter an ID</u>";
+            arr.push(" ID");
+          }else{
+            document.getElementById("idMessage").innerHTML ="<u></u>";
+          }
+          
+          if(document.getElementById("firstName").value === ""){
+            document.getElementById("firstNameMessage").innerHTML ="<u style='color:red'>Please Enter a First Name</u>";
+            arr.push(" FirstName");
+          }else{
+            document.getElementById("firstNameMessage").innerHTML ="<u></u>";
+          }
+
+          if(document.getElementById("lastName").value === ""){
+            document.getElementById("lastNameMessage").innerHTML ="<u style='color:red'>Please Enter a Last Name</u>";
+            arr.push(" LastName");
+          }else{
+            document.getElementById("lastNameMessage").innerHTML ="<u></u>";
+          }
+
+          line = line.concat(arr.toString());
+          setTimeout(function() {
+            alert(line);
+          }, 0);
+          return false;
+        }else{
+          setTimeout(function() {
+          document.getElementById("idMessage").innerHTML ="<u></u>";
+          document.getElementById("firstNameMessage").innerHTML ="<u></u>";
+          document.getElementById("lastNameMessage").innerHTML ="<u></u>";
+
+          document.getElementById("added").innerHTML = "<p>UserID: "+document.getElementById("id").value+"</p>"+
+                                                        "<p>First Name: "+document.getElementById("firstName").value+"</p>"+
+                                                        "<p>Last Name: "+document.getElementById("lastName").value+"</p>";
+          }, 0);
+          return false
+          
+        }
+      }
+    </script>
+  </body>
+  </html>

@@ -1,8 +1,10 @@
 <?php
 
-//space typed
-//store wrong answers
+ob_start();
 session_start();
+
+
+
 if(!isset($_SESSION['Clue'])||!isset($_SESSION['new_word'])){
 	header("Location: menu.php");
 }
@@ -150,6 +152,7 @@ $hang[8]='hang_8.png';
 		if (in_array($letter, $search_array)){
 			break loop;
 		}*/
+ob_end_flush();
 	
  ?>
  </div>

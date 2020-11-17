@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>Homeworks</title>
+<link rel="stylesheet" href="../external_css/assignments.css">
+<script>
+
+function setColors(bg_color, color){
+	if(color&&bg_color){
+		document.getElementById("body").style.color = color;
+		document.getElementById("body").style.background = bg_color;
+	}
+}
+var fibonacci_series = function (n) 
+{
+  if (n===1) 
+  {
+    return [0, 1];
+  } 
+  else 
+  {
+    var s = fibonacci_series(n - 1);
+    s.push(s[s.length - 1] + s[s.length - 2]);
+    return s;
+  }
+};
+console.log(fibonacci_series(11));
+</script>
+</head>
+
+<body id="body">
+<script>
+	var bg_color = prompt("The desired background color");
+	var color = prompt("The desired text color");
+	setColors(bg_color,color);
+	
+</script>
+<h1>Fibonacci</h1>
+<div id="fib"></div>
+<h1>Triangle nested for loop</h1>
+<div id="nested_for"></div>
+<h1>Sort array </h1>
+<p>var arr1 = [ 3, 8, 7, 6, 5, -4, 3, 2, 1 ];</p>
+<h1>Sorted array </h1>
+<div id="sorted_array"></div>
+<h1>Find in array </h1>
+<div id="find_array"></div>
+<h1>Shuffle </h1>
+<div id="shuffle"></div>
+<script>
+var arr1 = [ 3, 8, 7, 6, 5, -4, 3, 2, 1 ];
+document.getElementById("sorted_array").innerHTML =arr1.sort();
+for(var i = 0; i<5;i++){
+	for(var j = 0; j<=i;j++){
+		document.getElementById("nested_for").innerHTML +="*";
+		console.log("*");
+	}
+	console.log("\n");
+	document.getElementById("nested_for").innerHTML +="<br>";
+}
+
+document.getElementById("fib").innerHTML = fibonacci_series(11);
+function foo(arr) {
+  var a = [],
+    b = [],
+    prev;
+
+  arr.sort();
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] !== prev) {
+      a.push(arr[i]);
+      b.push(1);
+    } else {
+      b[b.length - 1]++;
+    }
+    prev = arr[i];
+  }
+
+  return [a, b];
+}
+arr=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+
+var result = foo(arr);
+var k = Math.max.apply( Math, result[1]);
+var array_ = result[1];
+document.getElementById("find_array").innerHTML = result[0][result[1].indexOf(k)]+" ("+k+" times)" ;
+
+function shuffle(array) {
+  array.sort(() => Math.random() - 0.5);
+}
+
+var arr_shuffle = [100, 2, 300,4,5,6];
+shuffle(arr_shuffle);
+document.getElementById("shuffle").innerHTML = arr_shuffle;
+</script>
+</body>
+</html>

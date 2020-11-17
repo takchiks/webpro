@@ -1,4 +1,12 @@
-<html>
+<?php 
+
+ob_start();
+if(!isset($_COOKIE['login'])){
+	header("Location: index.php");
+}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;1,500&display=swap');
@@ -93,6 +101,10 @@ p
 <a href="rps/rps.php"># Rock Paper Scissors</a> <input name="game"  type="radio"  value="rps">
 <br>
 <a href="menu.php"> # Hangman</a> <input name="game"  type="radio"  value="hang">
+
+<br>
+<a href="logout.php"># Logout</a>
+
 <br>
 <form action="mainsubmit.php" method="post">
 
@@ -101,3 +113,4 @@ p
 </form>
 </body>
 </html>
+<?php ob_end_flush();?>

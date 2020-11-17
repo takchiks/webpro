@@ -1,7 +1,10 @@
 <?php 
+
 session_start();
 if(isset($_POST['username'])&&isset($_POST['password'])){
 	if($_POST['username']=="admin" && $_POST['password']=="#pass123"){
+		$_SESSION["login"]= $_POST['username'];
+		setcookie("login", $_POST['username'], time()+600, '/');
 		header("Location: main.php");
 	}
 }
