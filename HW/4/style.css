@@ -1,0 +1,117 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    background-image:url('img/wood.jpg');
+    background-size: cover;
+    background-position:center; 
+    background-repeat:	no-repeat; 
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    text-shadow: -2px 3px #000;
+    font-family: 'Bevan', cursive;
+    width: 50%;
+    margin: auto;
+
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.child {
+    flex: 1 0 21%; /* explanation below */
+    margin: 5px;
+    height: 170px;
+}
+.lastResult {
+    color: white;
+    padding: 7px;
+}
+
+.guesses {
+    color: white;
+    padding: 7px;
+}
+
+button {
+    background-color: blue;
+    color: #fff;
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 30px;
+    border-style: none;
+    margin-top: 30px;
+}
+
+#guessField {
+    color: #000;
+    width: 100%;
+    height: 40px;
+    border-style: none;
+    border-radius: 5px;
+    margin-top: 25px;
+    border: 5px solid blue;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-shadow: -2px 3px #000;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+}
+.btn{
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 8px;
+    border-color: white;
+    border-style: solid;
+    font-size: 24pt;
+    font-weight: bolder;
+    margin: auto;
+}
+.btn:hover{
+    color: blue;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    border-color: blue;
+    border-style: solid;
+    font-size: 24pt;
+    font-weight: bolder;
+    margin: auto;
+}
+.fixed-btm{ 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+table{
+    background-color: blue;
+    color: white;
+    font-weight: bolder;
+    margin: auto;
+}
+.heading{
+    width: 100%;
+}
