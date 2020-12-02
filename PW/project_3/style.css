@@ -1,0 +1,178 @@
+#shuffle{
+	font-family: 'sans sharif', serif;
+	font-size:14pt;
+}
+#puzzlearea{
+	width:400px;
+	height:400px;
+	position:relative;
+	margin:0px auto;
+}
+.piece{
+	width:90px;
+	height:90px;
+	border:5px solid black;
+	font-size:40pt;
+	position:absolute;
+	cursor:default;
+	background-image: url(5.jpg);
+	color: black;
+}
+.piece:hover{
+	width:90px;
+	height:90px;
+	border:5px solid black;
+	font-size:40pt;
+	position:absolute;
+	cursor:default;
+	background-image: url(5.jpg);
+	color: black;
+	
+	transform::scale(0.95);
+	transition:all ease 0.5s;
+	border:solid 2px #CCC;
+	box-shadow:5px 5px 5px 5px #333333333;
+	-webkit-animation: cssAnimation 10s 1 ease;
+	-moz-animation: cssAnimation 10s 1 ease;
+	-o-animation: cssAnimation 10s 1 ease;
+	-webkit-transform: rotate(10deg) scale(0.892) skew(0deg) translate(-71px);
+}
+
+@-webkit-keyframes cssAnimation {
+	from { -webkit-transform: rotate(0deg) scale(0.989) skew(0deg) translate(18px); }
+	to { -webkit-transform: rotate(10deg) scale(0.892) skew(0deg) translate(-71px); }
+	}
+	@-moz-keyframes cssAnimation {
+	from { -moz-transform: rotate(0deg) scale(0.989) skew(0deg) translate(18px); }
+	to { -moz-transform: rotate(10deg) scale(0.892) skew(0deg) translate(-71px); }
+	}
+	@-o-keyframes cssAnimation {
+	from { -o-transform: rotate(0deg) scale(0.989) skew(0deg) translate(18px); }
+	to { -o-transform: rotate(10deg) scale(0.892) skew(0deg) translate(-71px); }
+	}
+.winner{
+	color:blue;
+	text-shadow: -2px 3px black;
+	font-weight:bold;
+	background-color: white;
+    border-color: blue;
+	border-style: solid;
+	border-radius: 10px;
+}
+html {
+    font-family: sans-serif;
+}
+
+body {
+    background-image:url('wood.jpg');
+    background-size: cover;
+    background-position:center; 
+    background-repeat:	no-repeat; 
+    background-attachment: fixed;
+    text-align: center;
+    color:white;
+    text-shadow: -2px 3px #000;
+    font-family: 'Bevan', cursive;
+    width: 80%;
+    margin: auto;
+
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.child {
+    flex: 1 0 21%; /* explanation below */
+    margin: 5px;
+    height: 170px;
+}
+.lastResult {
+    color: white;
+    padding: 7px;
+}
+
+.guesses {
+    color: white;
+    padding: 7px;
+}
+
+button {
+    background-color: blue;
+    color: #fff;
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 30px;
+    border-style: none;
+    margin-top: 30px;
+}
+
+.select {
+    color: #000;
+    height: 40px;
+    border-style: none;
+    border-radius: 5px;
+    margin-top: 25px;
+    border: 2px solid blue;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-shadow: -2px 3px #000;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+}
+.btn{
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 8px;
+    border-color: white;
+    border-style: solid;
+    font-size: 24pt;
+    font-weight: bolder;
+    margin: auto;
+}
+.btn:hover{
+    color: blue;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    border-color: blue;
+    border-style: solid;
+    font-size: 24pt;
+    font-weight: bolder;
+    margin: auto;
+}
+.fixed-btm{ 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+table{
+    background-color: blue;
+    color: white;
+    font-weight: bolder;
+    margin: auto;
+}
+.heading{
+	width: 100%;
+}

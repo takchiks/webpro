@@ -1,0 +1,36 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=sans sharif" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Fifteen Puzzle</h1>
+		<p>
+			Hit the shuffle button, then solve the puzzle by moving the tiles until they're in numerical order.
+		</p>
+		
+		<h1 id="winner" class="winner"></h1>
+		<div id="puzzlearea"></div>
+
+		<h1 id="totalMoves" class="winner"></h1>
+		<p id="controls">
+			Select Background Image:
+			<select id="background" class="select">
+				<option value='5.jpg'>Flower Background</option>
+				<option value='convert.jpg'>Light Background</option>
+				<option value='3.jpg'>Cartoon Background</option>
+				<option value='sunli.jpg'>Bluesky Background </option>
+
+			</select>
+			<button id="shuffle" class="btn" >Shuffle</button>
+		</p>
+		<div id = "winCount"></div>
+		
+		<audio id="myAudio" allow="autoplay">
+			<source src="gametheme.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+
+		<script src="script.js"></script>		
+	</body>
+		</html>
